@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de Înregistrare</title>
+  <link rel="stylesheet" href="Inregistrare.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Register</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Email Address" required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="tel" placeholder="Phone Number (+373)" id="phone-number" required pattern="\+373[1-9]\d{7}" title="Numărul trebuie să înceapă cu +373 și să conțină 8 cifre fără 0 imediat după prefix.">
+        <i class='bx bxs-phone'></i>
+      </div>
+      <div id="phone-conditions" style="display: none;">
+        <ul>
+          <li id="starts-with">
+            <i class='bx bxs-circle' style="color: white;"></i> Trebuie să înceapă cu +373
+          </li>
+          <li id="no-zero">
+            <i class='bx bxs-circle' style="color: white;"></i> Nu trebuie să conțină 0 după +373
+          </li>
+          <li id="exact-length">
+            <i class='bx bxs-circle' style="color: white;"></i> Trebuie să conțină exact 8 cifre după prefix
+          </li>
+        </ul>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" id="password" required>
+        <i class='bx bxs-hide' id="toggle-password"></i>
+      </div>
+      <div id="password-conditions" style="display: none;">
+        <ul>
+          <li id="uppercase">
+            <i class='bx bxs-circle' style="color: white;"></i> Cel puțin o literă mare
+          </li>
+          <li id="special-character">
+            <i class='bx bxs-circle' style="color: white;"></i> Cel puțin un caracter special
+          </li>
+          <li id="min-length">
+            <i class='bx bxs-circle' style="color: white;"></i> Minimum 8 caractere
+          </li>
+        </ul>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Confirm Password" id="confirm-password" required>
+        <i class='bx bxs-hide' id="toggle-confirm-password"></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">I agree to the Terms & Conditions</label>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="register-link">
+        <p>Already have an account? <a href="../Logare/Logare.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+  <script src="Inregistare.js"></script>
+</body>
+</html>

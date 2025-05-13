@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: white; 
+
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+ background-image: url('../../Imagini/Fundal moldova.jpg');
+    color: white; 
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 10px auto 20px;
+    background: #ff4a8d;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff4a8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff3268;
+}
+.tours-destination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    background-color: white !important; /* Fundal alb */
+}
+
+.tours-destination .content {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.tours-destination .content h2 {
+    font-size: 36px;
+    color: #2c2c54;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tours-destination .content .underline {
+    width: 100px;
+    height: 4px;
+    background-color: #ff4a8d;
+    margin-bottom: 20px;
+}
+
+.tours-destination .content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.tours-destination .content .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff4a8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tours-destination .content .btn:hover {
+    background-color: #ff3268;
+}
+
+.tours-destination .images-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 500px;
+}
+
+.tours-destination .images-grid .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
