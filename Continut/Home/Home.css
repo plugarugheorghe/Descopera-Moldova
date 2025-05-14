@@ -143,3 +143,23 @@ body {
     height: auto;
     border-radius: 10px;
 }
+.image-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aliniază imaginea și textul la centru */
+    margin-top: 20px;
+}
+
+.image-description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Spațiu între imagine și descriere */
+}
+
+.image-description p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin: 0;
+}

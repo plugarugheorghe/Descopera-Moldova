@@ -1,0 +1,140 @@
+/* Resetare și stiluri de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333; /* Culoare text generală */
+}
+
+/* Secțiunea Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('../../Imagini/Fundal moldova.jpg'); /* Imagine de fundal */
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Suprapunere semi-transparentă */
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 10px auto 20px;
+    background: #ff4a8d; /* Linie sub titlu */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff4a8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff3268;
+}
+
+/* Secțiunea Istorie */
+.history-section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+
+.history-section .content h2 {
+    font-size: 36px;
+    color: #2c2c54;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.history-section .content .underline {
+    width: 100px;
+    height: 4px;
+    background-color: #ff4a8d;
+    margin: 10px auto;
+}
+
+.history-section .content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.history-item {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.history-item h3 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.history-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
