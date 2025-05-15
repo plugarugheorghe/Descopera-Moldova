@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbarContainer = document.getElementById("navbar-container");
 
-  // Fetch the content of Navbar.html
   fetch("../Navbar/Navbar.html")
     .then((response) => {
       if (!response.ok) {
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.text();
     })
     .then((html) => {
-      // Insert the content into the navbar container
       navbarContainer.innerHTML = html;
     })
     .catch((error) => {
@@ -20,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const footerContainer = document.getElementById("footer-container");
 
-  // Fetch the content of Footer.html
   fetch("../Footer/Footer.html")
     .then((response) => {
       if (!response.ok) {
@@ -29,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.text();
     })
     .then((html) => {
-      // Inserează conținutul în containerul footer-ului
       footerContainer.innerHTML = html;
     })
     .catch((error) => {

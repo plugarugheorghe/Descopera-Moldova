@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@ body {
     color: white;
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;

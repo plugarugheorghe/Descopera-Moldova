@@ -9,13 +9,9 @@ togglePassword.addEventListener('click', () => {
     togglePassword.className = 'bx bxs-hide';
   }
 });
-// Selectează formularul
 const form = document.querySelector('form');
 
-// Adaugă un eveniment pentru butonul de submit
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Previne comportamentul implicit de trimitere a formularului
-
-  // După ce datele sunt procesate (validare, autentificare), redirecționează utilizatorul către pagina principală
-  window.location.href = "../../Continut/Home/Home.html"; // Calea corectă către Home.html
+  event.preventDefault(); 
+  window.location.href = "../../Continut/Home/Home.html"; 
 });
