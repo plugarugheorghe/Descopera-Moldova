@@ -12,3 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error('Error loading Footer:', error));
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('.pagination-link');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const href = link.getAttribute('href');
+      if (href && href !== '#') {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 600); 
+      }
+    });
+  });
+});

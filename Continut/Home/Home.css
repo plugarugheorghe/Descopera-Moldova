@@ -164,3 +164,6 @@ body {
     text-align: center;
     margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
