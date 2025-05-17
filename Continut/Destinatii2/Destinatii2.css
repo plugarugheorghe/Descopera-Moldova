@@ -246,3 +246,21 @@ body.fade-out {
     text-decoration: none;
     color: #e63c7c;
 }
+.destinations-page .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ff4a8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.herodestinations-page .btn:hover {
+    background-color: #ff3268;
+}
+html {
+    scroll-behavior: smooth;
+}

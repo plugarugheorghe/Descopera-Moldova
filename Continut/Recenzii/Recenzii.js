@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbarContainer = document.getElementById("navbar-container");
+
   fetch("../Navbar/Navbar.html")
     .then((response) => {
       if (!response.ok) {
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
   const footerContainer = document.getElementById("footer-container");
+
   fetch("../Footer/Footer.html")
     .then((response) => {
       if (!response.ok) {

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   links.forEach(link => {
     link.addEventListener('click', function (e) {
       const href = link.getAttribute('href');
-      if (href && href !== '#' && !link.classList.contains('active')) {
+     if (href && href !== '#') {
         e.preventDefault();
         document.body.classList.add('fade-out');
         setTimeout(() => {

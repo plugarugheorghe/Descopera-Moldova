@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzii</title>
+    <link rel="stylesheet" href="Recenzii.css">
+    <link rel="stylesheet" href="../Navbar/Navbar.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <section id="recenzii-hero" class="hero">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>ADEVARUL SPUS DE OAMENII</h1>
+                <a href="#recenzii" class="btn">Explorează recenziile</a>
+            </div>
+        </section>
+        <section id="recenzii" class="reviews-section">
+            <div class="content">
+                <h2>RECENZIILE OAMENILOR</h2>
+                <div class="underline"></div>
+                <p>Părerile vizitatorilor noștri sunt foarte importante pentru noi. Descoperă experiențele celor care au vizitat Moldova și lasă-ți și tu recenzia!</p>
+                <a href="#adauga-recenzie" class="btn">Adaugă recenzie</a>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <img src="../../Imagini/Flag.png" alt="Avatar utilizator">
+                    <h3>Maria Sirbu, Moldova.</h3>
+                    <div class="review-content"></div>
+                    <p class="review-text">“O țară uimitoare! Am descoperit tradiții autentice și oameni foarte ospitalieri. Recomand cu drag!”</p>
+                    <span class="review-date">12 februarie 2024</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Vin.jpg" alt="Avatar utilizator">
+                    <h3>Hiroshi Tanaka, Japonia</h3>
+                    <p class="review-text">“Peisaje de vis și o istorie care te fascinează la fiecare pas. Moldova m-a surprins plăcut!”</p>
+                    <span class="review-date">8 iunie 2021</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Mancare.jpg" alt="Avatar utilizator">
+                    <h3>Elena Constantinescu, Romînia.</h3>
+                    <p class="review-text">“Mi-au plăcut mult mănăstirile și satele tradiționale. O experiență autentică și liniștitoare.”</p>
+                    <span class="review-date">3 martie 2025</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Portul popular.jpg" alt="Avatar utilizator">
+                    <h3> David O'Connor, Irlanda.</h3>
+                    <p class="review-text">“Un colț de lume prea puțin cunoscut, dar plin de suflet. Revin cu siguranță!”</p>
+                    <span class="review-date">1 iulie 2023</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Portul popular.jpg" alt="Avatar utilizator">
+                    <h3>Chen Mei, China</h3>
+                    <p class="review-text">“Ghidul perfect pentru a înțelege cultura moldovenească. Am învățat și simțit enorm.”</p>
+                    <span class="review-date">21 mai 2024</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Portul popular.jpg" alt="Avatar utilizator">
+                    <h3>Marius Bogdan, România.</h3>
+                    <p class="review-text">“Istoria Moldovei este impresionantă. Am aflat lucruri noi la fiecare pas. Merită descoperită!”</p>
+                    <span class="review-date">14 martie 2022</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Portul popular.jpg" alt="Avatar utilizator">
+                    <h3> Lucas Schneider, Germania.</h3>
+                    <p class="review-text">“„O experiență autentică! Am simțit legătura profundă a oamenilor cu tradițiile lor. Totul a fost minunat.”</p>
+                    <span class="review-date">11 august 2023</span>
+                </div>
+                <div class="review-card">
+                    <img src="../../Imagini/Portul popular.jpg" alt="Avatar utilizator">
+                    <h3>Julia Robinson, Statele Unite.</h3>
+                    <p class="review-text">“Mâncarea, oamenii, locurile — totul a fost peste așteptări. Moldova e o destinație fantastică!”</p>
+                    <span class="review-date">1 aprilie 2025</span>
+                </div>
+            </div>
+        </section>
+        <section id="adauga-recenzie" class="add-review-section">
+            <div class="content">
+                <h2>Adaugă propria recenzie</h2>
+                <form class="review-form">
+                    <input type="text" name="nume" placeholder="Numele tău" required>
+                    <textarea name="recenzie" placeholder="Scrie recenzia ta..." required></textarea>
+                    <button type="submit" class="btn">Trimite</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="footer-container"></div>
+    <script src="Recenzii.js"></script>
+</body>
+</html>
