@@ -80,6 +80,18 @@ body {
 .hero .btn:hover {
     background-color: #ff3268; 
 }
+.btn{
+     display: inline-block;
+    padding: 10px 25px; 
+    background-color: #ff4a8d; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 20px; 
+    font-size: 16px; 
+}
+.btn:hover {
+    background-color: #ff3268; 
+}
 .history-section {
     padding: 50px;
     max-width: 1200px;
@@ -87,6 +99,18 @@ body {
     background-color: white;
     text-align: center;
 }
+
+.history-item {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.35s ease-out; /* Adaugă tranziție */
+}
+.history-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai mare */
+} 
 
 .history-section .content h2 {
     font-size: 36px;
@@ -110,12 +134,14 @@ body {
     margin-bottom: 20px;
 }
 
+.history-section .content > .btn {
+    margin-bottom: 40px; 
+}
 .history-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
-
 .history-item {
     background: #f1f1f1;
     padding: 20px;

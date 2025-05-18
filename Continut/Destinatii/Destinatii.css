@@ -87,6 +87,14 @@ body.fade-out {
     overflow: hidden;
     margin: 20px;
     text-align: center;
+    transition: all 0.30s ease-out;
+    transform: translateZ(0);
+    will-change: transform, box-shadow;
+}
+
+.course-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 .course-details {

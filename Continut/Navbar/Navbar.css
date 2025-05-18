@@ -15,7 +15,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
-
 }
 
 nav {
@@ -37,7 +36,8 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 15px; 
+    margin: 0 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Adaugă tranziție */
 }
 
 .nav-links a {
@@ -65,4 +65,10 @@ nav {
 
 .nav-links .button:hover {
     background-color: #ff3268;
+}
+
+/* Hover effect for navigation links */
+.nav-links li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
 }
