@@ -178,9 +178,9 @@ body.dark-mode .nav-links a {
     color: #f0f0f0;
 }
 
-body.dark-mode .button {
-    background-color: #ff3268 ;
-    color: #fff;
+body.dark-mode .btn {
+     background-color: #ff4a8d !important;
+    color: white !important;
 }
 
 body.dark-mode #darkModeToggle {
@@ -212,3 +212,10 @@ body.dark-mode .tours-destination .btn:hover {
     background-color: #ff3268;
 }
 
+/* Doar "Acasă" în Dark Mode */
+body.dark-mode .active {
+    color: #ff4a8d !important;
+}
+body.dark-mode .active:hover {
+    color: #ff3268 !important;
+}
