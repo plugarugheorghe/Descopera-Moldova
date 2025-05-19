@@ -167,3 +167,48 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+
+body.dark-mode .nav-links a {
+    color: #f0f0f0;
+}
+
+body.dark-mode .button {
+    background-color: #ff3268 ;
+    color: #fff;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #555;
+}
+
+body.dark-mode main,
+body.dark-mode section {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .tours-destination {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .tours-destination .content h2,
+body.dark-mode .tours-destination .content p,
+body.dark-mode .image-description p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tours-destination .btn {
+    background-color:#ff3268;
+    color: white;
+}
+
+body.dark-mode .tours-destination .btn:hover {
+    background-color: #ff3268;
+}
+

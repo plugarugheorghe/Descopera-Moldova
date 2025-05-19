@@ -271,3 +271,29 @@ body.fade-out {
 html {
     scroll-behavior: smooth;
 }
+
+body.dark-mode main,
+body.dark-mode section {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .tours-destination {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .tours-destination .content h2,
+body.dark-mode .tours-destination .content p,
+body.dark-mode .image-description p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tours-destination .btn {
+    background-color: #bb3377;
+    color: white;
+}
+
+body.dark-mode .tours-destination .btn:hover {
+    background-color: #dd5599;
+}
+

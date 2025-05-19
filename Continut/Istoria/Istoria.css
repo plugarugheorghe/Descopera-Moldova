@@ -106,10 +106,10 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
-    transition: all 0.35s ease-out; /* Adaugă tranziție */
+    transition: all 0.35s ease-out; 
 }
 .history-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai mare */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 } 
 
 .history-section .content h2 {
@@ -163,3 +163,31 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+
+body.dark-mode main,
+body.dark-mode section {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+
+body.dark-mode .tours-destination {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .tours-destination .content h2,
+body.dark-mode .tours-destination .content p,
+body.dark-mode .image-description p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tours-destination .btn {
+    background-color: #bb3377;
+    color: white;
+}
+
+body.dark-mode .tours-destination .btn:hover {
+    background-color: #dd5599;
+}
+

@@ -30,3 +30,41 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Eroare la încărcarea footer-ului:", error);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    if (isDarkMode) {
+        body.classList.add("dark-mode");
+    }
+
+    toggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+        const isDark = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDark); 
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../Navbar/Navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+
+            const toggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+            const isDarkMode = localStorage.getItem("darkMode") === "true";
+            if (isDarkMode) {
+                body.classList.add("dark-mode");
+            }
+
+            toggle.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+                const isDark = body.classList.contains("dark-mode");
+                localStorage.setItem("darkMode", isDark);
+            });
+        });
+});
+
