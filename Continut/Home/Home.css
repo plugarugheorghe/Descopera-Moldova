@@ -73,7 +73,7 @@ body {
 }
 
 .hero .btn:hover {
-    background-color: #ff3268;
+    background-color:#ff4a8d;
 }
 .tours-destination {
     display: flex;
@@ -127,7 +127,7 @@ body {
 }
 
 .tours-destination .content .btn:hover {
-    background-color: #ff3268;
+    background-color:#ff4a8d;
 }
 
 .tours-destination .images-grid {
@@ -173,10 +173,6 @@ body.dark-mode {
     color: #f0f0f0;
 }
 
-body.dark-mode nav {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #333;
-}
 
 body.dark-mode .nav-links a {
     color: #f0f0f0;
@@ -210,11 +206,10 @@ body.dark-mode .image-description p {
 }
 
 body.dark-mode .tours-destination .btn {
-    background-color: #bb3377;
+    background-color: #ff4a8d;
     color: white;
 }
 
 body.dark-mode .tours-destination .btn:hover {
-    background-color: #dd5599;
+    background-color: #ff4a8d;
 }
-

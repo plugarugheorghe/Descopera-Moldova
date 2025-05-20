@@ -1,13 +1,11 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Stiluri generale */
 body {
     font-family: 'Arial', sans-serif;
     color: white;
+}
+
+.dark-mode {
+    background-color: #000; /* Fond negru pentru dark mode */
 }
 
 header {
@@ -74,6 +72,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
 }
+
 #darkModeToggle svg {
     width: 24px;
     height: 24px;
@@ -84,6 +83,7 @@ nav {
 #darkModeToggle:hover svg {
     transform: rotate(20deg);
 }
+
 #login-link {
     display: inline-block;
     background-color: #ff4a8d;
@@ -98,6 +98,7 @@ nav {
 #login-link:hover {
     background-color: #ff3268;
 }
+
 #logout-link {
     display: inline-block;
     background-color: #ff4a8d;
@@ -113,4 +114,31 @@ nav {
     background-color: #ff3268;
 }
 
+/* Stiluri specifice pentru dark mode */
+.dark-mode body {
+    background-color: #000; /* Fond negru */
+    color: white; /* Text alb */
+}
 
+
+.dark-mode .logo {
+    color: white; /* Logo alb */
+}
+
+.dark-mode .nav-links a {
+    color: white; /* Link-uri albe */
+}
+
+.dark-mode .nav-links a.active,
+.dark-mode .nav-links a:hover {
+    color: #ff4a8d; /* Accent roșu-violet */
+}
+
+.dark-mode .button {
+    background-color: #ff4a8d; /* Buton roșu-violet */
+    color: white; /* Text alb */
+}
+
+.dark-mode .button:hover {
+    background-color: #ff3268; /* Accent mai închis */
+}
