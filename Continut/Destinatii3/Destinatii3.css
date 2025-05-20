@@ -283,7 +283,7 @@ body.dark-mode section {
 
 /* DARK MODE pentru secțiunea cu simboluri */
 body.dark-mode .tours-destination {
-    background-color: #1a1a1a !important;
+    background-color: black !important;
 }
 
 body.dark-mode .tours-destination .content h2,

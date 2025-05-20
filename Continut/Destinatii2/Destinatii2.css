@@ -8,17 +8,20 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+/* Hero Section */
 .destinations-page {
     position: relative;
     height: 100vh;
     background-image: url('../../Imagini/Fundal moldova.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    display: flex; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     color: white;
 }
@@ -30,75 +33,80 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
 .container {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .page-title {
-    font-size: 48px; 
+    font-size: 48px;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: white;
-    letter-spacing: 5px; 
-    position: relative; 
+    letter-spacing: 5px;
+    position: relative;
 }
 
 .page-title::after {
     content: '';
     display: block;
     width: 80px;
-    height: 2px; 
+    height: 2px;
     margin: 10px auto 0;
-    background: #ff4a8d; 
+    background: #ff4a8d;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .page-description {
-    font-size: 24px; 
+    font-size: 24px;
     margin-top: 10px;
     color: white;
     letter-spacing: 2px;
     text-align: center;
 }
 
+/* Secțiune Cursuri - Actualizată ca în Destinatii.html */
 .courses-section {
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 20px; 
-    justify-items: center; 
+    display: grid; /* Elimină "display: grid" */
+    grid-template-columns: repeat(4, 1fr); /* Elimină această linie */
+    grid-gap: 20px; /* Elimină această linie */
+    justify-items: center; /* Elimină această linie */
 }
+
 .course-card {
-display: flex;  
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,.1);
     overflow: hidden;
-    margin: 20px;
     text-align: center;
     transition: all 0.30s ease-out;
     transform: translateZ(0);
     will-change: transform, box-shadow;
 }
+
 .course-card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
+
+/* Detalii card */
 .course-details {
-    display: flex;          
-    flex-direction: column; 
-    flex: 1;                
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 20px;
 }
+
 .course-footer {
     margin-top: auto;
     display: flex;
@@ -108,6 +116,7 @@ display: flex;
     padding: 0 20px 20px;
 }
 
+/* Imagine */
 .course-image {
     position: relative;
 }
@@ -115,9 +124,11 @@ display: flex;
 .course-image img {
     width: 100%;
     height: 250px;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
 }
+
+/* Badge */
 .course-badge {
     position: absolute;
     top: 10px;
@@ -128,19 +139,23 @@ display: flex;
     padding: 5px 10px;
     border-radius: 20px;
 }
+
+/* Autor */
 .course-author {
     font-size: 14px;
     color: #888;
     margin-bottom: 5px;
 }
 
+/* Titlu */
 .course-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: bl;
+    color: #333;
 }
 
+/* Meta-info */
 .course-meta {
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +176,7 @@ display: flex;
     color: #ff4a8d;
 }
 
+/* Preț */
 .course-price {
     font-weight: bold;
 }
@@ -176,12 +192,15 @@ display: flex;
     margin-left: 5px;
 }
 
+/* Link */
 .course-link {
     color: #ff4a8d;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
 }
+
+/* Titlu secțiune */
 .section-title {
     font-size: 30px;
     text-align: center;
@@ -200,48 +219,54 @@ display: flex;
     background: #ff4a8d;
     margin: 10px auto 0;
 }
- .pagination {
+
+/* Paginație */
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     margin-top: 20px;
-  }
-  
-  .pagination a {
+    padding: 10px 0;
+}
+
+.pagination a {
     display: inline-block;
     width: 40px;
-    height: 40px; 
-    line-height: 40px; 
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     margin: 0 5px;
-    border-radius: 50%; 
-    border: 2px solid lightgrey; 
-    color: black; 
-    text-decoration: none;
-    background-color: white; 
-    transition: background-color 0.3s, color 0.3s; 
-  }
-  
-  .pagination a:hover {
-    background-color: #ff4a8d; 
-    color: white; 
-  }
-  
-  .pagination a.active {
+    border-radius: 50%;
     border: 2px solid lightgrey;
+    color: black;
+    text-decoration: none;
     background-color: white;
-    color: #333; 
-  }
-  
-  .pagination a.active:hover {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
     background-color: #ff4a8d;
     color: white;
-  }
-body.fade-out {
-  opacity: 0;
-  transition: opacity 0.3s;
 }
+
+.pagination a.active {
+    border: 2px solid lightgrey;
+    background-color: white;
+    color: black;
+}
+
+.pagination a.active:hover {
+    background-color: #ff4a8d;
+    color: white;
+}
+
+/* Alte stiluri */
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
 .course-link {
     color: #ff4a8d;
     text-decoration: none;
@@ -253,6 +278,7 @@ body.fade-out {
     text-decoration: none;
     color: #e63c7c;
 }
+
 .destinations-page .btn {
     display: inline-block;
     margin-top: 20px;
@@ -268,18 +294,33 @@ body.fade-out {
 .herodestinations-page .btn:hover {
     background-color: #ff3268;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Alte elemente globale (ex. main, section) */
+/* DARK MODE - Stiluri generale */
+body.dark-mode,
 body.dark-mode main,
 body.dark-mode section {
     background-color: #1a1a1a;
     color: #e0e0e0;
 }
 
-/* DARK MODE pentru secțiunea cu simboluri */
+/* DARK MODE - Paginație */
+body.dark-mode .pagination a {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .pagination a:hover,
+body.dark-mode .pagination a.active {
+    background-color: #ff4a8d;
+    color: white;
+    border-color: white;
+}
+
+/* DARK MODE - Alte secțiuni specifice */
 body.dark-mode .tours-destination {
     background-color: #1a1a1a !important;
 }
@@ -291,11 +332,10 @@ body.dark-mode .image-description p {
 }
 
 body.dark-mode .tours-destination .btn {
-    background-color: #bb3377;
+    background-color: #ff4a8d;
     color: white;
 }
 
 body.dark-mode .tours-destination .btn:hover {
-    background-color: #dd5599;
+    background-color: #ff4a8d;
 }
-
