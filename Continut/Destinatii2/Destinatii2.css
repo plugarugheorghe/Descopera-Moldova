@@ -272,12 +272,14 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Alte elemente globale (ex. main, section) */
 body.dark-mode main,
 body.dark-mode section {
     background-color: #1a1a1a;
     color: #e0e0e0;
 }
 
+/* DARK MODE pentru secțiunea cu simboluri */
 body.dark-mode .tours-destination {
     background-color: #1a1a1a !important;
 }

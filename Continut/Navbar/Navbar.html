@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descopera Moldova</title>
+    <title>Descoperă Moldova</title>
     <link rel="stylesheet" href="Navbar.css">
 </head>
 <body>
@@ -15,16 +15,17 @@
                 <li><a href="../Istoria/Istoria.html"><b>Istoria</b></a></li>
                 <li><a href="../Destinatii/Destinatii.html"><b>Destinații</b></a></li>
                 <li><a href="../Recenzii/Recenzii.html"><b>Recenzii</b></a></li>
-                <li><a href="../../Securtity/Logare/Logare.html" class="button"><b>Login</b></a></li>
-                <li><a href="../../Securtity/Delogare/Delogare.html" class="button"><b>Logout</b></a></li>
-               <li id="darkModeToggle" style="margin-left: 20px; cursor: pointer;">
-    <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24">
-       `<path d="M21.64 13.35A9 9 0 0110.65 2.36a7 7 0 1010.99 10.99z"/>`
-    </svg>
-</li>
-
+                <div id="auth-buttons">
+                <a href="../../Securtity/Logare/Logare.html" id="login-link"><b>Login</b></a>
+                <a href="../../Securtity/Delogare/Delogare.html" id="logout-link" style="display: none;"><b>Logout</b></a>
+                </div>
+                <button id="darkModeToggle" style="margin-left: 20px; padding: 6px 12px; border: none; border-radius: 8px; cursor: pointer; background: #3498db; color: #fff; font-weight: 600;">
+                    <span id="darkModeIcon">☀️</span>
+                </button>
             </ul>
         </nav>
     </header>
+
+    <script src="Navbar.js"></script>
 </body>
 </html>

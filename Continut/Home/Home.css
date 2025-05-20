@@ -173,26 +173,32 @@ body.dark-mode {
     color: #f0f0f0;
 }
 
+body.dark-mode nav {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
 
 body.dark-mode .nav-links a {
     color: #f0f0f0;
 }
 
-body.dark-mode .btn {
-     background-color: #ff4a8d !important;
-    color: white !important;
+body.dark-mode .button {
+    background-color: #2e2e2e;
+    color: #fff;
 }
 
 body.dark-mode #darkModeToggle {
     background-color: #555;
 }
 
+/* Alte elemente globale (ex. main, section) */
 body.dark-mode main,
 body.dark-mode section {
     background-color: #1a1a1a;
     color: #e0e0e0;
 }
 
+/* DARK MODE pentru secțiunea cu simboluri */
 body.dark-mode .tours-destination {
     background-color: #1a1a1a !important;
 }
@@ -204,18 +210,11 @@ body.dark-mode .image-description p {
 }
 
 body.dark-mode .tours-destination .btn {
-    background-color:#ff3268;
+    background-color: #bb3377;
     color: white;
 }
 
 body.dark-mode .tours-destination .btn:hover {
-    background-color: #ff3268;
+    background-color: #dd5599;
 }
 
-/* Doar "Acasă" în Dark Mode */
-body.dark-mode .active {
-    color: #ff4a8d !important;
-}
-body.dark-mode .active:hover {
-    color: #ff3268 !important;
-}
